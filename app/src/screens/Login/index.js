@@ -1,5 +1,6 @@
 import styles from "./Login.module.scss";
 
+import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -69,10 +70,24 @@ const Login = (props) => {
                 ? formik.errors.password
                 : null}
             </div>
-            <div className={styles.login}>
-              <div className={styles.loginButton} onClick={formik.handleSubmit}>
+            <div className={styles.forgotPassword}>
+              <Link to="/forgotPassword">
+                Forgot password
+              </Link>
+            </div>
+            <div className={styles.loginButtonContainer}>
+              <button
+                className={styles.loginButton}
+                onClick={formik.handleSubmit}
+              >
                 Login
-              </div>
+              </button>
+            </div>
+            <div className={styles.register}>
+              Don't have an account?
+              <Link to="/register">
+                {" "} Register!
+              </Link>
             </div>
           </form>
         </div>
