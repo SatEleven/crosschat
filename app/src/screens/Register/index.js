@@ -1,19 +1,26 @@
-import styles from "./Login.module.scss";
+import styles from "./Register.module.scss";
 
-import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-const Login = (props) => {
+const Register= (props) => {
   const formik = useFormik({
     initialValues: {
       username: "",
+      email: "",
       password: "",
     },
 
     validationSchema: Yup.object({
       username: Yup.string()
         .required("Required")
+        .typeError("Must be a string of characters")
+        .min(1, "Must be between 1 to 255 characters")
+        .max(255, "Must be between 1 to 255 characters"),
+
+      email: Yup.string()
+        .required("Required")
+        .email("Invalid email")
         .typeError("Must be a string of characters")
         .min(1, "Must be between 1 to 255 characters")
         .max(255, "Must be between 1 to 255 characters"),
@@ -26,8 +33,9 @@ const Login = (props) => {
     }),
 
     onSubmit: (values) => {
-      props.loginAction({
+      props.registerAction({
         username: values.username,
+        email: values.email,
         password: values.password,
       });
     },
@@ -42,7 +50,7 @@ const Login = (props) => {
           <form onSubmit={formik.handleSubmit}>
             <div className={styles.formField}>
               <label className={styles.formFieldLabel}>
-                Username or email address
+                Username
               </label>
               <input
                 className={styles.input}
@@ -54,6 +62,22 @@ const Login = (props) => {
               />
               {formik.touched.username && formik.errors.username
                 ? formik.errors.username
+                : null}
+            </div>
+            <div className={styles.formField}>
+              <label className={styles.formFieldLabel}>
+                Email address
+              </label>
+              <input
+                className={styles.input}
+                id="inputEmailAddress"
+                type="text"
+                name="email"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+              />
+              {formik.touched.email && formik.errors.email
+                ? formik.errors.email
                 : null}
             </div>
             <div className={styles.formField}>
@@ -70,24 +94,13 @@ const Login = (props) => {
                 ? formik.errors.password
                 : null}
             </div>
-            <div className={styles.forgotPassword}>
-              <Link to="/forgotPassword">
-                Forgot password
-              </Link>
-            </div>
-            <div className={styles.loginButtonContainer}>
+            <div className={styles.registerButtonContainer}>
               <button
-                className={styles.loginButton}
+                className={styles.registerButton}
                 onClick={formik.handleSubmit}
               >
-                Login
+                Register
               </button>
-            </div>
-            <div className={styles.register}>
-              Don't have an account?
-              <Link to="/register">
-                {" "} Register!
-              </Link>
             </div>
           </form>
         </div>
@@ -96,4 +109,4 @@ const Login = (props) => {
   );
 };
 
-export default Login;
+export default Register;
