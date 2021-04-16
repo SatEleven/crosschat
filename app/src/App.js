@@ -1,15 +1,17 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/header";
 import Home from "./screens/Home";
 import LoginForm from "./screens/Login";
 import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Header />
           <Route exact path="/">
             <Home />
           </Route>
@@ -20,7 +22,7 @@ function App() {
             <Chat />
           </Route>
           <Route exact path="/profile">
-            <Profile/>
+            <Profile />
           </Route>
         </Switch>
       </Router>
