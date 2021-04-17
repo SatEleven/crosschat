@@ -1,14 +1,17 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./screens/Home/Home";
+import Header from "./components/header";
+import Home from "./screens/Home";
 import Login from "./screens/Login";
+import Register from "./screens/Register";
 import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
-import './App.css';
+import "./App.css";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -16,11 +19,14 @@ function App() {
           <Route exact path="/login">
             <Login />
           </Route>
+          <Route exact path="/register">
+            <Register />
+          </Route>
           <Route exact path="/chat">
             <Chat />
           </Route>
           <Route exact path="/profile">
-            <Profile/>
+            <Profile />
           </Route>
         </Switch>
       </Router>
