@@ -4,21 +4,22 @@
   box-sizing: border-box;
 }
 
-.header-text1 {
-  margin: 26px;
-  color: white;
-}
-
 .header-text2 {
-  margin: 55px;
   color: white;
+  font-size: 64px;
+  font-weight: 300;
+  margin-top: 20vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .header-text3 {
-  margin-top: -34px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 55px;
-  color: white;
+  color: #517e02;
+
+  font-size: 32px;
+  font-weight: 300;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  left: 0;
 }
 
 .start-button {
