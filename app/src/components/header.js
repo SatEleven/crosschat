@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import logoUrl from "../logo.svg";
+import logoUrl from "../logo.png";
 const Header = () => (
   <div className="header">
     <img className="logoImage" src={logoUrl} alt="LogoImage" />

@@ -1,15 +1,62 @@
 .container {
   min-height: calc(100vh - 75px);
   background-color: #2a5892;
-  color: #2A5892;
+  color: #2a5892;
 }
 
-.content{
-    display: flex;
+.content {
+  display: flex;
 }
 
 .formCircle {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  margin: 10px 10px 10px 10px;
+}
+.formAbout {
+  min-width: 35%;
+}
+.formInterest {
+  min-width: 65%;
+}
+.imageDiv {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.editProfile {
+  background-color: white;
+}
+
+.formEnterBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+
+  div {
+    color: black;
+    border-radius: 80px;
+    background-color: aqua;
+    height: 50px;
+    text-align: center;
+  }
+}
+
+.formInterestBox {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.formInterestForm {
+  border-radius: 80px;
+  height: 70vh;
+  width: 100%;
+  background-color: #acd1ff;
+  margin: 10px 10px 10px 10px;
 }
