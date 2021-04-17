@@ -1,19 +1,21 @@
 import styles from "./EditProfile.module.scss";
 import watermelon from "../../media/watermelon logo.jpeg";
+import { useHistory } from "react-router-dom";
 
-const editProfile = () => {
-    
+const EditProfile = () => {
+        const history = useHistory();
+    const goLogin = () => history.push('/authentication');
     return(
         <div className = {styles.container}>
             <div className = {styles.formInterestBox}>
                 <div className = {styles.formInterestForm}>
                     <div className={styles.formEnterBox}>
+                        <p>Change Picture</p>
                         <div className = {styles.editProfile}>
-                            <button className = {styles.editButton}
-                            //onClick = {goLogin}
-                            >
-                            Change Image          
-                            </button>
+                            
+                            <input className ={styles.editButton} id='fileid' type='file' name='filename'></input>         
+                           
+                            
                             
                         </div>
                         <div>
@@ -24,7 +26,7 @@ const editProfile = () => {
                         </div>
                         <div className = {styles.editProfile}>
                             <button className = {styles.editButton}
-                            //onClick = href = "./authentication"
+                            onClick = {goLogin}
                             >
                             Change Password
                             </button>
@@ -48,5 +50,5 @@ const editProfile = () => {
     );
 };
 
-export default editProfile;
+export default EditProfile;
 

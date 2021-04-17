@@ -6,7 +6,8 @@ import Register from "./screens/Register";
 import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
 
-import EditProfile from "./screens/EditProfile"
+import EditProfile from "./screens/EditProfile";
+import Authentication from "./screens/Authentication";
 
 import About from "./screens/About";
 import Contact from "./screens/Contact";
@@ -35,10 +36,12 @@ function App(props) {
           <Route exact path="/profile">
             <Profile />
           </Route>
-
+          <Route exact path="/authentication">
+            <Authentication />
+          </Route>
           <Route exact path="/editProfile">
             <EditProfile />
-
+          </Route>
           <Route exact path="/about">
             <About />
           </Route>
