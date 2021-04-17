@@ -78,6 +78,23 @@
   margin-top: 10px;
 }
 
+.formInterestBoxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 75vh;
+
+  div{
+    color: black;
+    border-radius: 80px;
+    background-color: whitesmoke;
+    height:50px;
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    
+  }
+}
 
 .editButton{
   &:hover, &:focus {
@@ -115,7 +132,7 @@
   left:50%;
   top:1px;
   bottom:1px;
-  width:4px;
+  width:6px;
   transform:translateX(-50%);
 
 }
@@ -124,7 +141,7 @@
   top:50%;
   left:1px;
   right:1px;
-  height:4px;
+  height:6px;
   transform:translateY(-50%);
 
 }
@@ -160,6 +177,12 @@
 .dropdown:hover .plus:before {background-color: #358af1;}
 .dropdown:hover .plus:after {background-color:#358af1;}
 
+img {
+  width:150px;
+  height:200px;
+  object-fit: contain;
+  margin-left: 20px;
+}
 
 
 
