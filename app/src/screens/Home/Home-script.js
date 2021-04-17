@@ -10,6 +10,7 @@ window.onload = function () {
     });
   });
 
+  if (overlay === null) return;
   overlay.addEventListener("click", () => {
     const modals = document.querySelectorAll(".modal.active");
     modals.forEach((modal) => {
