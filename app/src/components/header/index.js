@@ -9,7 +9,17 @@ const Header = () => {
       return (
         <>
           <li>
-            <a className={stylesheet.hyperlinkList} href="/Login">
+            <a className={stylesheet.hyperlinkList} href="/chat">
+              Chat
+            </a>
+          </li>
+          <li>
+            <a className={stylesheet.hyperlinkList} href="/profile">
+              Profile
+            </a>
+          </li>
+          <li>
+            <a className={stylesheet.hyperlinkList} href="/login">
               Sign out
             </a>
           </li>
@@ -19,7 +29,7 @@ const Header = () => {
       return (
         <>
           <li>
-            <a className={stylesheet.hyperlinkList} href="/Login">
+            <a className={stylesheet.hyperlinkList} href="/login">
               Login/Sign up
             </a>
           </li>
@@ -41,13 +51,13 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a className={stylesheet.hyperlinkList} href="/ContactUs">
-            Contact Us
+          <a className={stylesheet.hyperlinkList} href="/about">
+            About
           </a>
         </li>
         <li>
-          <a className={stylesheet.hyperlinkList} href="/About">
-            About
+          <a className={stylesheet.hyperlinkList} href="/contact">
+            Contact
           </a>
         </li>
         {Navigation()}

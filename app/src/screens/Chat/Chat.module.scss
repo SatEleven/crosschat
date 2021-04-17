@@ -1,0 +1,151 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex1 {
+  background-color: #0b376f;
+  border-top: 1px solid #ffffff;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex2 {
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  flex-grow: 5;
+}
+.flex3 {
+  background-color: #0b376f;
+  border-top: 1px solid #ffffff;
+  flex-grow: 1;
+}
+
+.groupProfile {
+  background-color: #ffffff;
+  border-radius: 20%;
+
+  // background: #000;
+  height: 0;
+  width: 60%;
+  padding-bottom: 60%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.profile {
+  // width: 50%;
+  // height: 50%;
+  //@at-root object-fit: groupProfile;
+  //    display: block;
+  //    margin: auto;
+}
+
+.members {
+  margin-top: 2rem;
+  color: white;
+  font-family: "Noto Sans";
+  font-weight: bold;
+
+  .membersLabel {
+    font-size: 24px;
+  }
+
+  ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    .puf {
+      font-size: 14px;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      margin: 20px;
+      margin-left: 0;
+
+      .profile,
+      .username,
+      .flag {
+        margin: 0 10px;
+      }
+      .profile {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: red;
+      }
+
+      .flag {
+        width: 30px;
+        height: 30px;
+        background-color: green;
+      }
+    }
+  }
+}
+
+.buttons {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+
+  .button {
+    margin: 1rem 2rem;
+    &:hover,
+    &:focus {
+      background-color: #B1AFAF;
+    }
+    border: 0;
+    background-color: #F2F2F2;
+    border-radius: 40px;
+    padding: 1rem 1rem;
+  }
+
+  .connectButton {
+    margin: 1rem 2rem;
+    &:hover,
+    &:focus {
+      background-color: green;
+    }
+    border: 0;
+    background-color: #D8FF96;
+    border-radius: 40px;
+    padding: 1rem 1rem;
+  }
+}
+
+.topic {
+    background-color: #D8FF96;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.bubbleLeft {
+    margin: 1rem;
+    display: flex;
+    align-items:flex-start;
+    div {
+        max-width: 33%;
+        background-color: #D9EAFF;
+    }
+}
+
+.bubbleRight {
+    margin: 1rem;
+    display: flex;
+    align-items:flex-end;
+    div {
+        max-width: 33%;
+        background-color: #ACD1FF;
+    }
+}
