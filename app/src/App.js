@@ -6,11 +6,10 @@ import Register from "./screens/Register";
 import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
 
-import EditProfile from "./screens/EditProfile"
+import EditProfile from "./screens/EditProfile";
 
 import About from "./screens/About";
 import Contact from "./screens/Contact";
-
 
 import "./App.css";
 
@@ -38,13 +37,12 @@ function App(props) {
 
           <Route exact path="/editProfile">
             <EditProfile />
-
+          </Route>
           <Route exact path="/about">
             <About />
           </Route>
           <Route exact path="/contact">
             <Contact />
-
           </Route>
         </Switch>
       </Router>
