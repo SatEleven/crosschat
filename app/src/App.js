@@ -5,6 +5,9 @@ import Login from "./screens/Login";
 import Register from "./screens/Register";
 import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
+import About from "./screens/About";
+import Contact from "./screens/Contact";
+
 import "./App.css";
 
 function App(props) {
@@ -27,6 +30,12 @@ function App(props) {
           </Route>
           <Route exact path="/profile">
             <Profile />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
           </Route>
         </Switch>
       </Router>
