@@ -28,6 +28,7 @@ window.onload = function () {
   function openModal(modal) {
     if (modal == null) return;
     modal.classList.add("active");
+    if (overlay == null) return;
     overlay.classList.add("active");
   }
 
