@@ -5,6 +5,7 @@ import Login from "./screens/Login";
 import Register from "./screens/Register";
 import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
+import EditProfile from "./screens/EditProfile"
 import "./App.css";
 
 function App(props) {
@@ -27,6 +28,9 @@ function App(props) {
           </Route>
           <Route exact path="/profile">
             <Profile />
+          </Route>
+          <Route exact path="/editProfile">
+            <EditProfile />
           </Route>
         </Switch>
       </Router>

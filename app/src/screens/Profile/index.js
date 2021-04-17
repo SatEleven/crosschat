@@ -5,7 +5,7 @@ import watermelon from "../../media/watermelon logo.jpeg"
 //import { Redirect } from "react-router-dom";
 const Profile = () => {
   const history = useHistory();
-  const goLogin = () => history.push('/');
+  const goLogin = () => history.push('/editProfile');
 
   return (
     <div className={styles.container}>
