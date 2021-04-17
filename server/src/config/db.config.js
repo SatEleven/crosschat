@@ -1,7 +1,5 @@
-const dbConfig = {
+module.exports = {
   HOST: "localhost",
   PORT: 27017,
   DB: "crosschat_db"
 };
-
-export default dbConfig;

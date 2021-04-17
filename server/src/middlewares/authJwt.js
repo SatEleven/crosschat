@@ -1,13 +1,11 @@
-import jwt from "jsonwebtoken";
-import config from "../config/auth.config";
-import db from "../model";
-import {RequestHandler, ErrorHandler} from "express";
-
+const jwt = require("jsonwebtoken");
+const config = require("../config/auth.config.js");
+const db = require("../models");
 const User = db.user;
 const Role = db.role;
 
-const verifyToken: RequestHandler = (req, res, next) => {
-  let token: string = req.headers["x-access-token"];
+verifyToken = (req, res, next) => {
+  let token = req.headers["x-access-token"];
 
   if (!token) {
     return res.status(403).send({ message: "No token provided!" });
@@ -22,7 +20,7 @@ const verifyToken: RequestHandler = (req, res, next) => {
   });
 };
 
-const isAdmin: RequestHandler = (req, res, next) => {
+isAdmin = (req, res, next) => {
   User.findById(req.userId).exec((err, user) => {
     if (err) {
       res.status(500).send({ message: err });
@@ -53,7 +51,7 @@ const isAdmin: RequestHandler = (req, res, next) => {
   });
 };
 
-const isModerator = (req, res, next) => {
+isModerator = (req, res, next) => {
   User.findById(req.userId).exec((err, user) => {
     if (err) {
       res.status(500).send({ message: err });
