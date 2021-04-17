@@ -3,7 +3,7 @@ import styles from "./Register.module.scss";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-const Register= (props) => {
+const Register = (props) => {
   const formik = useFormik({
     initialValues: {
       username: "",
@@ -44,14 +44,11 @@ const Register= (props) => {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>Crosschat</header>
       <div className={styles.content}>
         <div className={styles.formBox}>
           <form onSubmit={formik.handleSubmit}>
             <div className={styles.formField}>
-              <label className={styles.formFieldLabel}>
-                Username
-              </label>
+              <label className={styles.formFieldLabel}>Username</label>
               <input
                 className={styles.input}
                 id="inputUsername"
@@ -65,9 +62,7 @@ const Register= (props) => {
                 : null}
             </div>
             <div className={styles.formField}>
-              <label className={styles.formFieldLabel}>
-                Email address
-              </label>
+              <label className={styles.formFieldLabel}>Email address</label>
               <input
                 className={styles.input}
                 id="inputEmailAddress"
