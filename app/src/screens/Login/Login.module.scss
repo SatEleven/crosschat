@@ -1,15 +1,14 @@
 .container {
   min-height: 100vh;
-  background-color: #2a5892;
-  color: #2A5892;
+  color: #2a5892;
 }
 
 a {
-  color: #2A5892;
+  color: #2a5892;
   text-decoration: none;
   &:hover,
   &:focus {
-    color: #D9EAFF;
+    color: #d9eaff;
     text-decoration: none;
   }
 }
@@ -56,9 +55,9 @@ a {
 }
 
 .loginButton {
-
-  &:hover, &:focus {
-    background-color: #4D7607;
+  &:hover,
+  &:focus {
+    background-color: #4d7607;
   }
   border: 0;
   background-color: #609800;

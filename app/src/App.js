@@ -7,11 +7,12 @@ import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
 
 import EditProfile from "./screens/EditProfile";
+
 import Authentication from "./screens/Authentication";
+
 
 import About from "./screens/About";
 import Contact from "./screens/Contact";
-
 
 import "./App.css";
 
@@ -47,7 +48,6 @@ function App(props) {
           </Route>
           <Route exact path="/contact">
             <Contact />
-
           </Route>
         </Switch>
       </Router>
