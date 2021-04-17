@@ -1,0 +1,25 @@
+.container {
+  min-height: calc(100vh - 75px);
+  background-color: #2a5892;
+  background-image: url(../../media/theme_bg.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+}
+.dividerLeft {
+  min-width: 65%;
+  text-align: center;
+}
+.dividerRight {
+  min-width: 35%;
+  text-align: center;
+}
+
+.title {
+  color: #517e02;
+  font-size: 64px;
+  font-weight: 300;
+}

@@ -7,7 +7,7 @@ import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
 import "./App.css";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Router>
