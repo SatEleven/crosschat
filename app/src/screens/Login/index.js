@@ -36,7 +36,6 @@ const Login = (props) => {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>Crosschat</header>
       <div className={styles.content}>
         <div className={styles.formBox}>
           <form onSubmit={formik.handleSubmit}>
@@ -71,9 +70,7 @@ const Login = (props) => {
                 : null}
             </div>
             <div className={styles.forgotPassword}>
-              <Link to="/forgotPassword">
-                Forgot password
-              </Link>
+              <Link to="/forgotPassword">Forgot password</Link>
             </div>
             <div className={styles.loginButtonContainer}>
               <button
@@ -85,9 +82,7 @@ const Login = (props) => {
             </div>
             <div className={styles.register}>
               Don't have an account?
-              <Link to="/register">
-                {" "} Register!
-              </Link>
+              <Link to="/register"> Register!</Link>
             </div>
           </form>
         </div>

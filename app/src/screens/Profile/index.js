@@ -1,17 +1,20 @@
 import styles from "./Profile.module.scss";
 import { useHistory } from "react-router-dom";
+import watermelon from "../../media/watermelon logo.jpeg"
 
 //import { Redirect } from "react-router-dom";
 const Profile = () => {
   const history = useHistory();
-  const goLogin = () => history.push('/');
+  const goLogin = () => history.push('/editProfile');
 
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.formAbout}>
           <div className={styles.imageDiv}>
-            <div className={styles.formCircle}></div>
+            <div className={styles.formCircle}>
+            <img src={watermelon}></img>
+            </div>
           </div>
           <div className={styles.formEnterBox}>
             <div>Username</div>
@@ -38,6 +41,14 @@ const Profile = () => {
                 <div className={styles.dropdownContent}>
                   <input type="text" id="interest" placeholder="Enter New Interest"></input>    
                 </div>
+              </div>
+              <div className={styles.formInterestBoxes}>
+                <div>Interest 1</div>
+                <div>Interest 2</div>
+                <div>Interest 3</div>
+                <div>Interest 4</div>
+                <div>Interest 5</div>
+              
               </div>
             </div>
           </div>
