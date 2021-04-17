@@ -2,6 +2,32 @@ import React from "react";
 import stylesheet from "./header.module.scss";
 import logoUrl from "../../media/hackathonlogo.png";
 const Header = () => {
+  const currentRoute = window.location.pathname;
+
+  function Navigation() {
+    if (currentRoute === "/profile" || currentRoute === "/chat") {
+      return (
+        <>
+          <li>
+            <a className={stylesheet.hyperlinkList} href="/Login">
+              Sign out
+            </a>
+          </li>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <li>
+            <a className={stylesheet.hyperlinkList} href="/Login">
+              Login/Sign up
+            </a>
+          </li>
+        </>
+      );
+    }
+  }
+
   return (
     <div className={stylesheet.header}>
       <div className={stylesheet.logoContainer}>
@@ -24,11 +50,7 @@ const Header = () => {
             About
           </a>
         </li>
-        <li>
-          <a className={stylesheet.hyperlinkList} href="/Login">
-            Login/Sign up
-          </a>
-        </li>
+        {Navigation()}
       </ul>
     </div>
   );
