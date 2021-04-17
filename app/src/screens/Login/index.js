@@ -1,10 +1,15 @@
 import styles from "./Login.module.scss";
-
 import { Link } from "react-router-dom";
-import { useFormik } from "formik";
+import { useHistory } from "react-router-dom";
+import { FormikProvider, useFormik } from "formik";
 import * as Yup from "yup";
 
 const Login = (props) => {
+  const history = useHistory();
+  const successful = () => {
+    //Redirect to another route
+    history.push("/chat");
+  };
   const formik = useFormik({
     initialValues: {
       username: "",
@@ -26,10 +31,7 @@ const Login = (props) => {
     }),
 
     onSubmit: (values) => {
-      props.loginAction({
-        username: values.username,
-        password: values.password,
-      });
+      successful();
     },
     enableReinitialize: true,
   });
