@@ -21,11 +21,12 @@
   min-width: 65%;
 }
 .imageDiv {
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 70px;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 10%;
   display: flex;
   justify-content: center;
+  position: absolute;
 }
 
 .editProfile {
@@ -33,9 +34,11 @@
   color: #ffffff;
   position: relative;
     margin-left: 5vw;
-    margin-top: 3vh;
     margin-right: 5vw;
   border-radius: 80px;
+ 
+  padding-bottom: 3vh;
+  max-width: 329.5px;
 
 }
 
@@ -43,37 +46,47 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 25vh;
+  height: auto;
+  margin-top: 16%;
+  align-items:center;
 
   div {
     color: black;
     border-radius: 80px;
     background-color: whitesmoke;
+    height: 50px;
     text-align: center;
     margin-right: 10vw;
     margin-left: 10vw;
-    margin-top: 10px;
-    height: 50px;
+    margin-top: 1vh;
+    padding-bottom: 3vh;
+    width:100%;
+    max-width: 400px;
+    
 
   }
 }
 
 .formInterestBox {
-  padding-left: 12vw;
-  padding-right: 12vw;
-  padding-bottom: 15vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 15vh;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  
 }
 
 .formInterestForm {
   border-radius: 80px;
-  height: 80vh;
-  width: 100%;
+  height: 50vh;
+  width: 50%;
   background-color: #acd1ff;
-  margin-left: 2vw;
-  margin-right: 3vw;
-  margin-top: 10px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 10vh;
+  position: absolute;
+  max-width: 562.5px;
+  
 }
 
 .formInterestBoxes{
@@ -106,6 +119,8 @@
   width: 100%;
   border-radius: 80px;
   height: 50px;
+  max-width: 100px;
+  margin-top: 5%;
   
 }
 
@@ -186,6 +201,31 @@ img {
   padding-left:  12vw;
   padding-right: 12vw;
   padding-bottom: 15vw;
+}
+
+input {
+  color: black;
+    border-radius: 80px;
+    background-color: whitesmoke;
+    height:50px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+p{
+  text-align:center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Noto Sans;
+  font-weight: bold;
+}
+
+a {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 30%;
+  font: noto sans;
 }
 
 

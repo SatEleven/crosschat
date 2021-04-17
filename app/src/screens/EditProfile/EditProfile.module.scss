@@ -36,6 +36,11 @@
     margin-left: 5vw;
     margin-right: 5vw;
   border-radius: 80px;
+  margin-top:1vh;
+  padding-bottom: 3vh;
+  width:100%;
+  max-width:329.5px;
+
 
 }
 
@@ -43,8 +48,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 35vh;
-  margin-top: 30%;
+  height: auto;
+  margin-top: 25%;
+  align-items:center;
 
   div {
     color: black;
@@ -52,29 +58,35 @@
     background-color: whitesmoke;
     height: 50px;
     text-align: center;
+    width:100%;
     margin-right: 10vw;
     margin-left: 10vw;
+    margin-top: 1vh;
+    padding-bottom: 3vh;
+    max-width:329.5px;
+    
 
   }
 }
 
 .formInterestBox {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-bottom: 15vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 15vh;
   display: flex;
   justify-content: center;
 }
 
 .formInterestForm {
   border-radius: 80px;
-  height: 70vh;
+  height: 50vh;
   width: 50%;
   background-color: #acd1ff;
   margin-left: 15vw;
   margin-right: 15vw;
   margin-top: 10vh;
   position: absolute;
+  max-width:562.5px;
 }
 
 .formInterestBoxes{
@@ -107,6 +119,7 @@
   width: 100%;
   border-radius: 80px;
   height: 50px;
+  max-width:562.5px;
   
 }
 
@@ -197,6 +210,14 @@ input {
     text-align: center;
     width: 100%;
     
+}
+
+p{
+  text-align:center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Noto Sans;
+  font-weight: bold;
 }
 
 
