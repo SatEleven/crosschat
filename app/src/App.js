@@ -7,7 +7,7 @@ import Chat from "./screens/Chat";
 import Profile from "./screens/Profile";
 
 import EditProfile from "./screens/EditProfile";
-
+import PasswordReset from "./screens/PasswordReset";
 import Authentication from "./screens/Authentication";
 
 
@@ -39,6 +39,9 @@ function App(props) {
           </Route>
           <Route exact path="/authentication">
             <Authentication />
+          </Route>
+          <Route exact path="/passwordreset">
+            <PasswordReset />
           </Route>
           <Route exact path="/editProfile">
             <EditProfile />
