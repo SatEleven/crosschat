@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 const Authentication = () => {
     const history = useHistory();
     const goLogin = () => history.push('/authentication');
-    const goNext = () => history.push('/passwordreset')
+    const goNext = () => history.push('/forgotPassword')
 
     return(
         <div className = {styles.container}>
