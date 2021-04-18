@@ -174,9 +174,9 @@ body {
 .marquee1 img {
   position: relative;
   display: inline-block;
-  /* width: 20%;
-  height: 20%; */
-  top: 41%;
+
+  width: 296px;
+  top: 50%;
   left: 6%;
   padding-left: 100%;
   animation: marquee 6s linear infinite;
@@ -201,16 +201,17 @@ body {
   position: relative;
   display: inline-block;
   top: 19%;
-  left: 6%;
+  left: 20%;
+  width: 296px;
   padding-left: 100%;
   animation: marquee 9s linear infinite;
 }
 .marquee3 {
   position: absolute;
-  top: 0;
+  top: 300;
   right: 0;
-  width: 230px;
-  height: 230px;
+  width: 290px;
+  height: 300px;
   margin-right: 40px;
   margin-top: 40px;
   line-height: 50px;
@@ -223,10 +224,11 @@ body {
 .marquee3 img {
   position: relative;
   display: inline-block;
-  top: 74%;
-  left: 6%;
+  top: 0.1%;
+  width: 356px;
+  left: 20%;
   padding-left: 100%;
-  animation: marquee 10s linear infinite;
+  animation: marquee 7s linear infinite;
 }
 @keyframes marquee {
   0% {
