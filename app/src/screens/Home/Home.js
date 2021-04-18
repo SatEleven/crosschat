@@ -10,13 +10,13 @@ const Home = () => {
     <div class = "flexContainer">
       <div class="flex1">
       <h1 class="header-text2">Connect. Exchange. Learn.</h1>
-        <span class="header-text3">
+        <div class="header-text3">
           Connect with people from different background
           <br />
           Share your culture
           <br />
           Learn new languages
-        </span> 
+        </div> 
       </div>
       <div class = "flex2">
         <div class = "parent">
