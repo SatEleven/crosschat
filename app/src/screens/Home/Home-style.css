@@ -72,6 +72,7 @@ body {
 .world-map {
   /* padding: 300px; */
   width: 100%;
+  height: 100%;
 }
 .modal {
   position: fixed;
@@ -88,7 +89,7 @@ body {
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
-/* 
+
 .modal-header {
   padding: 10px 15px;
   display: flex;
@@ -113,7 +114,7 @@ body {
 
 .modal-body {
   padding: 10px 15px;
-} */
+}
 
 #overlay {
   position: fixed;
