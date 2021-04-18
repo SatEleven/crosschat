@@ -40,7 +40,7 @@ function App(props) {
           <Route exact path="/authentication">
             <Authentication />
           </Route>
-          <Route exact path="/passwordreset">
+          <Route exact path="/forgotPassword">
             <PasswordReset />
           </Route>
           <Route exact path="/editProfile">

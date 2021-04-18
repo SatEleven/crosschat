@@ -72,7 +72,7 @@ const Login = (props) => {
                 : null}
             </div>
             <div className={styles.forgotPassword}>
-              <Link to="/forgotPassword">Forgot password</Link>
+              <Link to="/authentication">Forgot password</Link>
             </div>
             <div className={styles.loginButtonContainer}>
               <button
