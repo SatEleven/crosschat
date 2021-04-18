@@ -1,11 +1,11 @@
 import styles from "./Profile.module.scss";
 import { useHistory } from "react-router-dom";
-import watermelon from "../../media/watermelon logo.jpeg"
+import watermelon from "../../media/watermelon logo.jpeg";
 
 //import { Redirect } from "react-router-dom";
 const Profile = () => {
   const history = useHistory();
-  const goLogin = () => history.push('/editProfile');
+  const goLogin = () => history.push("/editProfile");
 
   return (
     <div className={styles.container}>
@@ -13,25 +13,20 @@ const Profile = () => {
         <div className={styles.formAbout}>
           <div className={styles.imageDiv}>
             <div className={styles.formCircle}>
-            <img src={watermelon}></img>
+              <img src={watermelon}></img>
             </div>
           </div>
           <div className={styles.formEnterBox}>
-            <div>Username</div>
-            <div>Firstname</div>
-            <div>Last name</div>
-            <div>Email Address</div>
+            <div>johnkim213</div>
+            <div>John</div>
+            <div>Kim name</div>
+            <div>johnkim213@gmail.com</div>
             <div className={styles.editProfile}>
-              <button
-              className = {styles.editButton}
-              onClick = {goLogin}
-              >
+              <button className={styles.editButton} onClick={goLogin}>
                 edit profile
               </button>
             </div>
           </div>
-          
-
         </div>
         <div className={styles.formInterest}>
           <div className={styles.formInterestBox}>
@@ -39,7 +34,11 @@ const Profile = () => {
               <div className={styles.dropdown}>
                 <button type="button" className={styles.plus}></button>
                 <div className={styles.dropdownContent}>
-                  <input type="text" id="interest" placeholder="Enter New Interest"></input>    
+                  <input
+                    type="text"
+                    id="interest"
+                    placeholder="Enter New Interest"
+                  ></input>
                 </div>
               </div>
               <div className={styles.formInterestBoxes}>
@@ -48,15 +47,12 @@ const Profile = () => {
                 <div>Interest 3</div>
                 <div>Interest 4</div>
                 <div>Interest 5</div>
-              
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
   );
 };
 
